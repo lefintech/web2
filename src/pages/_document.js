@@ -11,7 +11,7 @@ class MyDocument extends Document {
         <Head>
           <meta
             name="title"
-            content="Lefin Suitcase"
+            content="Lefin"
           />
           <meta
             name="description"
