@@ -12,14 +12,14 @@ function BannerThree({ data }) {
               className="banner-three-item up-down-anim-hover"
               style={{
                 backgroundImage: `url('${
-                  process.env.PUBLIC_URL + item.background
+                  item.background
                 }')`,
               }}
             >
               <Row gutter={30} justify="center">
                 <Col md={10}>
                   <div className="banner-three-image">
-                    <img src={process.env.PUBLIC_URL + item.image} />
+                    <img src={item.image} />
                   </div>
                 </Col>
                 <Col md={12}>
@@ -34,7 +34,7 @@ function BannerThree({ data }) {
                     </div>
                     <Button type="primary" shape="round">
                       <Link
-                        href={process.env.PUBLIC_URL + "/shop/shop-3-column"}
+                        href="/shop/shop-3-column"
                       >
                         <a>Shop now</a>
                       </Link>

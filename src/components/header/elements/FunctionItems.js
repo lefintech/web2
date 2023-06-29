@@ -10,14 +10,12 @@ function FunctionItems({ hideTotal, hideWishlist }) {
   return (
     <div className="function-items">
       {!hideWishlist && (
-        <Link href={process.env.PUBLIC_URL + "/shop/wishlist"}>
-          <a className="function-items-item">
-            <i className="icon_heart_alt" />
-          </a>
+        <Link href="/shop/wishlist" className="function-items-item">
+          <i className="icon_heart_alt" />
         </Link>
       )}
 
-      <Link href={process.env.PUBLIC_URL + "/shop/cart"}>
+      <Link href="/shop/cart">
         <a className="function-items-item">
           <i className="icon_bag_alt" />
 

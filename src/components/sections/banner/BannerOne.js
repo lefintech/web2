@@ -14,7 +14,7 @@ function BannerOne({ data }) {
                 className="banner-one-item up-down-anim-hover"
                 style={{
                   backgroundImage: `url('${
-                    process.env.PUBLIC_URL + item.background
+                    item.background
                   }')`,
                 }}
               >
@@ -22,7 +22,7 @@ function BannerOne({ data }) {
                   <Col sm={24} md={10}>
                     <div className="banner-one-item__img">
                       <img
-                        src={process.env.PUBLIC_URL + item.image}
+                        src={item.image}
                         alt="Introduction image"
                       />
                     </div>
@@ -35,15 +35,10 @@ function BannerOne({ data }) {
                       </p>
                       <Button type="primary" shape="round">
                         <Link
-                          href={process.env.PUBLIC_URL + "/shop/shop-3-column"}
+                          href="/shop/shop-3-column"
                         >
-                          <a
-                            href={
-                              process.env.PUBLIC_URL + "/shop/shop-3-column"
-                            }
-                          >
+                          
                             Shop now
-                          </a>
                         </Link>
                       </Button>
                     </div>

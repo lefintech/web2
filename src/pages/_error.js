@@ -20,8 +20,8 @@ export default function error() {
                   been removed or name changed
                 </p>
                 <Button type="primary" shape="round">
-                  <Link href={process.env.PUBLIC_URL + "/"}>
-                    <a>Go to homepage</a>
+                  <Link href="/">
+                    Go to homepage
                   </Link>
                 </Button>
               </div>
@@ -29,9 +29,7 @@ export default function error() {
             <Col xs={24} md={12}>
               <div className="error-img">
                 <img
-                  src={
-                    process.env.PUBLIC_URL + "/assets/images/pages/404/1.png"
-                  }
+                  src="/assets/images/pages/404/1.png"
                   alt="404 Image"
                 />
               </div>

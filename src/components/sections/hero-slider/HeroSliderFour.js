@@ -50,7 +50,7 @@ function HeroSliderFour({ data }) {
           <div key={index} className="slick-slider-item">
             <div className="hero-slider-background">
               <img
-                src={process.env.PUBLIC_URL + item.background}
+                src={item.background}
                 alt="Hero slider background image"
               />
             </div>
@@ -59,7 +59,7 @@ function HeroSliderFour({ data }) {
                 <div className="hero-slider-content">
                   <img
                     data-animation="animate__fadeInUp"
-                    src={process.env.PUBLIC_URL + item.image}
+                    src={item.image}
                     alt="slider image"
                   />
                   <Button
@@ -68,10 +68,8 @@ function HeroSliderFour({ data }) {
                     type="primary"
                     shape="round"
                   >
-                    <Link href={process.env.PUBLIC_URL + "/shop/shop-3-column"}>
-                      <a href={process.env.PUBLIC_URL + "/shop/shop-3-column"}>
+                    <Link href="/shop/shop-3-column">
                         Shop now
-                      </a>
                     </Link>
                   </Button>
                 </div>

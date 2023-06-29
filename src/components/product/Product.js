@@ -109,22 +109,21 @@ function Product({ data, className, type, countdownLast = 100000000 }) {
           <div className={`product-tiny ${classNames(className)}`}>
             <div className="product-tiny-img">
               <Link
-                href={process.env.PUBLIC_URL + `/product/[slug]`}
-                as={process.env.PUBLIC_URL + `/product/${data.slug}`}
+                href={  `/product/[slug]`}
+                as={  `/product/${data.slug}`}
+                title={data.name}
               >
-                <a title={data.name}>
-                  <img src={data.coverImage} alt="Product image" />
-                </a>
+                <img src={data.coverImage} alt="Product image" />
               </Link>
             </div>
             <div className="product-tiny-content">
               <Link
-                href={process.env.PUBLIC_URL + `/product/[slug]`}
-                as={process.env.PUBLIC_URL + `/product/${data.slug}`}
+                href={  `/product/[slug]`}
+                as={ `/product/${data.slug}`}
+                className="product-tiny-name"
+                title="Pure Pineapple"
               >
-                <a className="product-tiny-name" title="Pure Pineapple">
-                  {data.name}
-                </a>
+                {data.name}
               </Link>
               <h3 className="product-tiny-price">
                 {data.discount
@@ -140,12 +139,11 @@ function Product({ data, className, type, countdownLast = 100000000 }) {
           <div className={`product-dale ${classNames(className)}`}>
             <div className="product-dale-img">
               <Link
-                href={process.env.PUBLIC_URL + `/product/[slug]`}
-                as={process.env.PUBLIC_URL + `/product/${data.slug}`}
+                href={ `/product/[slug]`}
+                as={ `/product/${data.slug}`}
+                title={data.name}
               >
-                <a title={data.name}>
-                  <img src={data.coverImage} alt="Product image" />
-                </a>
+                <img src={data.coverImage} alt="Product image" />
               </Link>
             </div>
 
@@ -174,12 +172,12 @@ function Product({ data, className, type, countdownLast = 100000000 }) {
             <div className="product-dale-content">
               <h5 className="product-dale-type">{data.category}</h5>
               <Link
-                href={process.env.PUBLIC_URL + `/product/[slug]`}
-                as={process.env.PUBLIC_URL + `/product/${data.slug}`}
+                href={ `/product/[slug]`}
+                as={ `/product/${data.slug}`}
+                className="product-dale-name"
+                title="Pure Pineapple"
               >
-                <a className="product-dale-name" title="Pure Pineapple">
-                  {data.name}
-                </a>
+                {data.name}
               </Link>
               <h3 className="product-dale-price">
                 {data.discount
@@ -249,12 +247,11 @@ function Product({ data, className, type, countdownLast = 100000000 }) {
           <div className="product-list">
             <div className="product-img">
               <Link
-                href={process.env.PUBLIC_URL + `/product/[slug]`}
-                as={process.env.PUBLIC_URL + `/product/${data.slug}`}
+                href={ `/product/[slug]`}
+                as={ `/product/${data.slug}`}
+                title={data.name}
               >
-                <a title={data.name}>
-                  <img src={data.coverImage} alt="Product image" />
-                </a>
+                <img src={data.coverImage} alt="Product image" />
               </Link>
               <Button type="primary" onClick={showModal}>
                 Quick view
@@ -263,12 +260,12 @@ function Product({ data, className, type, countdownLast = 100000000 }) {
             <div className="product-list-content">
               <h5 className="product-type">{data.category}</h5>
               <Link
-                href={process.env.PUBLIC_URL + `/product/[slug]`}
-                as={process.env.PUBLIC_URL + `/product/${data.slug}`}
+                href={ `/product/[slug]`}
+                as={ `/product/${data.slug}`}
+                className="product-name"
+                title="Pure Pineapple"
               >
-                <a className="product-name" title="Pure Pineapple">
-                  {data.name}
-                </a>
+                {data.name}
               </Link>
               <Rate
                 className="product-rate"
@@ -329,23 +326,22 @@ function Product({ data, className, type, countdownLast = 100000000 }) {
           <div className={`product ${classNames(className)}`}>
             <div className="product-img">
               <Link
-                href={process.env.PUBLIC_URL + `/product/[slug]`}
-                as={process.env.PUBLIC_URL + `/product/${data.slug}`}
+                href={ `/product/[slug]`}
+                as={ `/product/${data.slug}`}
+                title={data.name}
               >
-                <a title={data.name}>
-                  <img src={data.coverImage} alt="Product image" />
-                </a>
+                <img src={data.coverImage} alt="Product image" />
               </Link>
             </div>
             <div className="product-content">
               <h5 className="product-type">{data.category}</h5>
               <Link
-                href={process.env.PUBLIC_URL + `/product/[slug]`}
-                as={process.env.PUBLIC_URL + `/product/${data.slug}`}
+                href={ `/product/[slug]`}
+                as={ `/product/${data.slug}`}
+                className="product-name"
+                title="Pure Pineapple"
               >
-                <a className="product-name" title="Pure Pineapple">
-                  {data.name}
-                </a>
+                {data.name}
               </Link>
               <h3 className="product-price">
                 {data.discount

@@ -14,7 +14,7 @@ const DownOneItem = React.memo(({ reverse, data, className }) => {
     >
       <div className="dow-one-content__item-image">
         <img
-          src={process.env.PUBLIC_URL + data.iconSrc}
+          src={data.iconSrc}
           alt="Dale of the week icon"
         />
       </div>
@@ -50,10 +50,9 @@ function IntroductionFour() {
             <Col md={0} lg={8}>
               <img
                 className="dow-one-image"
-                src={
-                  process.env.PUBLIC_URL +
+                src=
                   "/assets/images/sections/introduction/four/img.png"
-                }
+                
                 alt="Introduction image"
               />
             </Col>

@@ -12,13 +12,11 @@ export default function MenuOne() {
       <Container>
         <div className="menu-wrapper">
           <MobileMenuOpener />
-          <Link href={process.env.PUBLIC_URL + "/"}>
-            <a className="menu-logo">
-              <img
-                src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
-                alt="Ogami logo"
-              />
-            </a>
+          <Link href= "/" className="menu-logo">
+            <img
+              src="/assets/images/logo.png"
+              alt="Lefin logo"
+            />
           </Link>
           <Navigator />
           <FunctionItems />

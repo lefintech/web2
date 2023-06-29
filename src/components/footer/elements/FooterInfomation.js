@@ -6,13 +6,11 @@ import SocialIcons from "../../other/SocialIcons";
 export default function FooterInfomation() {
   return (
     <div className="footer-info">
-      <Link href={process.env.PUBLIC_URL + "/"}>
-        <a className="footer-info__logo">
-          <img
-            src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
-            alt="Ogami Logo"
-          />
-        </a>
+      <Link href="/" className="footer-info__logo">
+        <img
+          src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
+          alt="Ogami Logo"
+        />
       </Link>
       <ul>
         <li>Address: 60-49 Road 11378 New York</li>

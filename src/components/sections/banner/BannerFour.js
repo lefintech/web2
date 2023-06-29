@@ -18,7 +18,7 @@ function BannerFour({ data }) {
                     className="banner-four-item -small up-down-anim-hover"
                     style={{
                       backgroundImage: `url('${
-                        process.env.PUBLIC_URL + item.background
+                          item.background
                       }')`,
                     }}
                   >
@@ -33,7 +33,7 @@ function BannerFour({ data }) {
                   className="banner-four-item -big up-down-anim-hover"
                   style={{
                     backgroundImage: `url('${
-                      process.env.PUBLIC_URL + item.background
+                        item.background
                     }')`,
                   }}
                 >

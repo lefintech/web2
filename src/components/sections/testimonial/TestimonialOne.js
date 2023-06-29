@@ -29,7 +29,7 @@ const data = [
 function TestimonialOneItem({ data }) {
   return (
     <div className="testimonial-one-item">
-      <img src={process.env.PUBLIC_URL + data.avatar} alt="Customer avatar" />
+      <img src={data.avatar} alt="Customer avatar" />
       <h3>{data.name}</h3>
       <p>{data.review}</p>
       <Rate defaultValue={data.rate} disabled />

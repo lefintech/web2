@@ -37,7 +37,7 @@ function CategoryColappse({ active }) {
           <ul>
             {categories.map((item, index) => (
               <li key={index}>
-                <Link href={process.env.PUBLIC_URL + item.href}>
+                <Link href={item.href}>
                   <a>{item.name}</a>
                 </Link>
               </li>

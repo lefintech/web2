@@ -119,7 +119,7 @@ function cart() {
                         <td className="table-img">
                           <div className="table-img-wrapper">
                             <img
-                              src={process.env.PUBLIC_URL + item.coverImage}
+                              src={item.coverImage}
                               alt="Product image"
                             />
                           </div>
@@ -182,8 +182,8 @@ function cart() {
                   </Form>
                 </div>
                 <Button className="cart-footer__update" type="primary">
-                  <Link href={process.env.PUBLIC_URL + "/shop/shop-3-column"}>
-                    <a>Update cart</a>
+                  <Link href="/shop/shop-3-column">
+                    Update cart
                   </Link>
                 </Button>
               </div>
@@ -214,14 +214,14 @@ function cart() {
                 </table>
                 <div className="cart-total__checkout">
                   <Button type="primary" shape="round">
-                    <Link href={process.env.PUBLIC_URL + "/shop/checkout"}>
-                      <a>Proceed to Checkout</a>
+                    <Link href="/shop/checkout">
+                      Proceed to Checkout
                     </Link>
                   </Button>
                   <span>-</span>
                   <Button type="link">
-                    <Link href={process.env.PUBLIC_URL + "#"}>
-                      <a>Check out with PayPal</a>
+                    <Link href="#">
+                      Check out with PayPal
                     </Link>
                   </Button>
                 </div>

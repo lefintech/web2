@@ -19,7 +19,7 @@ function CategoriesOne({ data }) {
                     <div className="categories-one-item__image up-down-anim-hover">
                       <span>{item.image.background}</span>
                       <img
-                        src={process.env.PUBLIC_URL + item.image.main}
+                        src={item.image.main}
                         alt="Category image"
                       />
                     </div>

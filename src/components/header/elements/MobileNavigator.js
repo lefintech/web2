@@ -23,7 +23,7 @@ function MobileNavigator() {
         <SubMenu key="homepage" title={navigatorData.HOME.title}>
           {navigatorData.HOME.subMenu.map((item) => (
             <Menu.Item key={item.title}>
-              <Link href={process.env.PUBLIC_URL + item.href}>
+              <Link href={item.href}>
                 <a> {item.title}</a>
               </Link>
             </Menu.Item>
@@ -33,7 +33,7 @@ function MobileNavigator() {
           <SubMenu key="shop layout" title="Layout shop">
             {navigatorData.SHOP.subMenu.layout.map((item) => (
               <Menu.Item key={item.title}>
-                <Link href={process.env.PUBLIC_URL + item.href}>
+                <Link href={ item.href}>
                   <a> {item.title}</a>
                 </Link>
               </Menu.Item>
@@ -42,7 +42,7 @@ function MobileNavigator() {
           <SubMenu key="shop detail" title="Detail shop">
             {navigatorData.SHOP.subMenu.detail.map((item) => (
               <Menu.Item key={item.title}>
-                <Link href={process.env.PUBLIC_URL + item.href}>
+                <Link href={ item.href}>
                   <a> {item.title}</a>
                 </Link>
               </Menu.Item>
@@ -51,7 +51,7 @@ function MobileNavigator() {
           <SubMenu key="shop pages" title="Pages shop">
             {navigatorData.SHOP.subMenu.pages.map((item) => (
               <Menu.Item key={item.title}>
-                <Link href={process.env.PUBLIC_URL + item.href}>
+                <Link href={ item.href}>
                   <a> {item.title}</a>
                 </Link>
               </Menu.Item>
@@ -61,14 +61,14 @@ function MobileNavigator() {
         <SubMenu key="pages" title={navigatorData.PAGES.title}>
           {navigatorData.PAGES.subMenu.map((item) => (
             <Menu.Item key={item.title}>
-              <Link href={process.env.PUBLIC_URL + item.href}>
+              <Link href={ item.href}>
                 <a> {item.title}</a>
               </Link>
             </Menu.Item>
           ))}
         </SubMenu>
         <Menu.Item key="alipay">
-          <Link href={process.env.PUBLIC_URL + navigatorData.ABOUT.href}>
+          <Link href={navigatorData.ABOUT.href}>
             <a
               href="https://ant.design"
               target="_blank"
@@ -80,7 +80,7 @@ function MobileNavigator() {
         </Menu.Item>
       </Menu>
       <div className="menu-mobile-functions">
-        <Link href={process.env.PUBLIC_URL + "/other/login"}>
+        <Link href="/other/login">
           <a className="menu-mobile-functions__login">Login / Register</a>
         </Link>
         <SocialIcons />

@@ -119,7 +119,7 @@ function wishlist() {
                         <td className="table-img">
                           <div className="table-img-wrapper">
                             <img
-                              src={process.env.PUBLIC_URL + item.coverImage}
+                              src={item.coverImage}
                               alt="Product image"
                             />
                           </div>
@@ -161,8 +161,8 @@ function wishlist() {
                 </table>
               </div>
               <Button className="wishlist-btn" type="primary" shape="round">
-                <Link href={process.env.PUBLIC_URL + "/shop/shop-3-column"}>
-                  <a>Continue shopping</a>
+                <Link href="/shop/shop-3-column">
+                  Continue shopping
                 </Link>
               </Button>
             </div>

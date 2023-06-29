@@ -14,22 +14,22 @@ function Navigator() {
   return (
     <ul className="navigation">
       <li className="navigation-item">
-        <Link href={process.env.PUBLIC_URL + navigatorData.ABOUT.href}>
+        <Link href={  navigatorData.ABOUT.href}>
           <a className="navigation-item__title">{navigatorData.ABOUT.title}</a>
         </Link>
       </li>
       <li className="navigation-item">
-        <Link href={process.env.PUBLIC_URL + navigatorData.ABOUT.href}>
+        <Link href={  navigatorData.ABOUT.href}>
           <a className="navigation-item__title">{navigatorData.ABOUT.title}</a>
         </Link>
       </li>
       <li className="navigation-item">
-        <Link href={process.env.PUBLIC_URL + navigatorData.ABOUT.href}>
+        <Link href={  navigatorData.ABOUT.href}>
           <a className="navigation-item__title">{navigatorData.ABOUT.title}</a>
         </Link>
       </li>
       <li className="navigation-item">
-        <Link href={process.env.PUBLIC_URL + navigatorData.ABOUT.href}>
+        <Link href={navigatorData.ABOUT.href}>
           <a className="navigation-item__title">{navigatorData.ABOUT.title}</a>
         </Link>
       </li>

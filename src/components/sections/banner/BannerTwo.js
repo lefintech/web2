@@ -9,10 +9,9 @@ export default function BannerTwo() {
         <Col md={10}>
           <div className="up-down-anim">
             <img
-              src={
-                process.env.PUBLIC_URL +
+              src=
                 "/assets/images/sections/banner/two/1.png"
-              }
+              
             />
           </div>
         </Col>
@@ -32,8 +31,8 @@ export default function BannerTwo() {
               sit
             </p>
             <Button type="primary" shape="round">
-              <Link href={process.env.PUBLIC_URL + "/shop/shop-3-column"}>
-                <a href={process.env.PUBLIC_URL + "/shop/shop-3-column"}>
+              <Link href= "/shop/shop-3-column">
+                <a href= "/shop/shop-3-column">
                   Shop now
                 </a>
               </Link>

@@ -58,7 +58,7 @@ function HeroSliderOne({ data }) {
           >
             <div className="hero-slider-background">
               <img
-                src={process.env.PUBLIC_URL + item.background}
+                src={item.background}
                 alt="Hero slider background image"
               />
             </div>
@@ -85,7 +85,7 @@ function HeroSliderOne({ data }) {
                     >
                       <img
                         src={
-                          process.env.PUBLIC_URL + item.price.image}
+                           item.price.image}
                         alt="Hero slider image"
                       />
                     </div>

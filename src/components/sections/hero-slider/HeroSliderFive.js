@@ -15,10 +15,7 @@ function HeroSliderFive({ data }) {
             <div className="hero-slider-wrapper">
               <div className="hero-slider-background">
                 <img
-                  src={
-                    process.env.PUBLIC_URL +
-                    "/assets/images/hero-slider/five/1.png"
-                  }
+                  src="/assets/images/hero-slider/five/1.png"
                   alt="Hero slider background image"
                 />
               </div>
@@ -30,10 +27,8 @@ function HeroSliderFive({ data }) {
                     {formatCurrency(14)} <span>/ Pakage</span>
                   </h3>
                   <Button type="primary" shape="round">
-                    <Link href={process.env.PUBLIC_URL + "/shop/shop-3-column"}>
-                      <a href={process.env.PUBLIC_URL + "/shop/shop-3-column"}>
+                    <Link href="/shop/shop-3-column">
                         Shop now
-                      </a>
                     </Link>
                   </Button>
                 </div>

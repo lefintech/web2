@@ -13,7 +13,7 @@ const DownOneItem = React.memo(({ reverse, data }) => {
     >
       <div className="dow-one-content__item-image">
         <img
-          src={process.env.PUBLIC_URL + data.iconSrc}
+          src={ data.iconSrc}
           alt="Dale of the week icon"
         />
       </div>
@@ -44,10 +44,7 @@ function DowOne({ data, countdownLast }) {
             <Col md={0} lg={8}>
               <img
                 className="dow-one-image"
-                src={
-                  process.env.PUBLIC_URL +
-                  "assets/images/sections/dale-of-week/one/img.png"
-                }
+                src="assets/images/sections/dale-of-week/one/img.png"                
                 alt="Dale of the week image"
               />
             </Col>

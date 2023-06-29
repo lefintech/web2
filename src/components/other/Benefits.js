@@ -27,7 +27,7 @@ function Benefits({ containerFluid, column, threeCol, style, className }) {
                 <div className="benefits-item">
                   <img
                     className="benefits-item__image"
-                    src={process.env.PUBLIC_URL + item.iconSrc}
+                    src={ item.iconSrc}
                     alt="Benefit icon"
                   />
                   <h5 className="benefits-item__title">{item.name}</h5>

@@ -44,7 +44,7 @@ export default function TopNavOne({ containerFluid }) {
                         marginTop: -3 / 16 + "em",
                         marginRight: 5 / 16 + "em",
                       }}
-                      src={process.env.PUBLIC_URL + item.image}
+                      src={item.image}
                       alt=""
                     />
                     {item.name}
@@ -53,11 +53,9 @@ export default function TopNavOne({ containerFluid }) {
               </Select>
             </div>
             <div className="top-nav-one-right__item">
-              <Link href={process.env.PUBLIC_URL + "/auth/login"}>
-                <a>
+              <Link href="/auth/login">
                   <i className="fas fa-user" />
                   Login
-                </a>
               </Link>
             </div>
           </div>

@@ -11,10 +11,10 @@ const IntroductionFive = ({ data }) => {
           <Col xs={0} sm={12} md={8}>
             <div className="introduction-five-image">
               <img
-                src={
-                  process.env.PUBLIC_URL +
+                src=
+                
                   "/assets/images/sections/introduction/five/1.png"
-                }
+                
                 alt="Dale of the week icon"
               />
             </div>
@@ -28,7 +28,7 @@ const IntroductionFive = ({ data }) => {
                     <div className="introduction-five-benefits__item">
                       <div className="introduction-five-benefits__item-image">
                         <img
-                          src={process.env.PUBLIC_URL + item.iconSrc}
+                          src={item.iconSrc}
                           alt="Dale of the week icon"
                         />
                       </div>

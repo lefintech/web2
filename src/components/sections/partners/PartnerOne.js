@@ -33,7 +33,6 @@ function PartnerOne({ style }) {
               <a href="#">
                 <img
                   src={
-                    process.env.PUBLIC_URL +
                     `/assets/images/sections/partners/${i + 1}.png`
                   }
                   alt="Partner logo"

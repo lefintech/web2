@@ -14,10 +14,8 @@ function HeroSliderThree({ data }) {
             <div className="hero-slider-wrapper">
               <div className="hero-slider-background">
                 <img
-                  src={
-                    process.env.PUBLIC_URL +
-                    "/assets/images/hero-slider/three/bg.png"
-                  }
+                  src="/assets/images/hero-slider/three/bg.png"
+                  
                   alt="Hero slider background image"
                 />
               </div>
@@ -33,15 +31,9 @@ function HeroSliderThree({ data }) {
                       </p>
                       <Button type="primary" shape="round">
                         <Link
-                          href={process.env.PUBLIC_URL + "/shop/shop-3-column"}
+                          href="/shop/shop-3-column"
                         >
-                          <a
-                            href={
-                              process.env.PUBLIC_URL + "/shop/shop-3-column"
-                            }
-                          >
-                            Shop now
-                          </a>
+                          Shop now
                         </Link>
                       </Button>
                     </div>
@@ -49,10 +41,7 @@ function HeroSliderThree({ data }) {
                   <Col sm={10}>
                     <div className="hero-slider-image up-down-anim">
                       <img
-                        src={
-                          process.env.PUBLIC_URL +
-                          "/assets/images/hero-slider/three/1.png"
-                        }
+                        src="/assets/images/hero-slider/three/1.png"
                         alt="Hero slider image"
                       />
                     </div>

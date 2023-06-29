@@ -87,8 +87,8 @@ const login = () => {
                       Register
                     </Button>
                     <Button type="link">
-                      <Link href={process.env.PUBLIC_URL + "/auth/login"}>
-                        <a>OR Login</a>
+                      <Link href="/auth/login">
+                        OR Login
                       </Link>
                     </Button>
                   </Form.Item>

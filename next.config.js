@@ -1,20 +1,18 @@
-const withSass = require("@zeit/next-sass");
-const withLess = require("@zeit/next-less");
+/** @type {import('next').NextConfig} */
 
-const isProd = process.env.NODE_ENV === "production";
+const withPlugins = require("next-compose-plugins");
+const withLess = require("next-with-less");
 
-// fix: prevents error when .less files are required by node
-if (typeof require !== "undefined") {
-  require.extensions[".less"] = (file) => {};
-}
-
-module.exports = withLess(
-  withSass({
-    env: {
-      PUBLIC_URL: "",
+const plugins = [
+  [
+    withLess,
+    {
+      lessLoaderOptions: {},
     },
-    lessLoaderOptions: {
-      javascriptEnabled: true,
-    },
-  })
-);
+  ],
+];
+
+module.exports = withPlugins(plugins, {
+  reactStrictMode: true,
+  swcMinify: true,
+});

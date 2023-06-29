@@ -28,7 +28,7 @@ function SearchForm({ enterButton = "Search", hideSelect }) {
       return;
     } else {
       router.push({
-        pathname: process.env.PUBLIC_URL + "/shop/shop-3-column",
+        pathname: "/shop/shop-3-column",
         query: { q: currentSearch },
       });
     }

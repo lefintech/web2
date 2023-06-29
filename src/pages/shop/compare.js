@@ -63,17 +63,17 @@ function compare() {
                     {compareState.map((item, index) => (
                       <td key={index} className="compare-item">
                         <img
-                          src={process.env.PUBLIC_URL + item.coverImage}
+                          src={item.coverImage}
                           alt="Product image"
                         />
                         <h5 className="product-type">{item.category}</h5>
                         <Link
-                          href={process.env.PUBLIC_URL + `/product/[slug]`}
-                          as={process.env.PUBLIC_URL + `/product/${item.slug}`}
+                          href={ `/product/[slug]`}
+                          as={`/product/${item.slug}`}
+                          className="product-name"
+                          title="Pure Pineapple"
                         >
-                          <a className="product-name" title="Pure Pineapple">
-                            {item.name}
-                          </a>
+                          {item.name}
                         </Link>
                       </td>
                     ))}

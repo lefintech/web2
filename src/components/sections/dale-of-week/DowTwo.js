@@ -41,10 +41,9 @@ function DowTwo({ countdownLast }) {
                 }}
               />
               <Button type="primary" shape="round">
-                <Link href={process.env.PUBLIC_URL + "/shop/shop-3-column"}>
-                  <a href={process.env.PUBLIC_URL + "/shop/shop-3-column"}>
+                <Link href="/shop/shop-3-column">
+                  
                     Shop now
-                  </a>
                 </Link>
               </Button>
             </div>
@@ -53,10 +52,7 @@ function DowTwo({ countdownLast }) {
             {" "}
             <div className="dow-two-img up-down-anim">
               <img
-                src={
-                  process.env.PUBLIC_URL +
-                  "/assets/images/sections/dale-of-week/two/1.png"
-                }
+                src="/assets/images/sections/dale-of-week/two/1.png"
                 alt="Dale of the week image"
               />
             </div>

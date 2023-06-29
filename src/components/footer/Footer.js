@@ -34,7 +34,7 @@ function Footer({ containerFluid, className }) {
           <div className="footer-bottom__wrapper">
             <p>Copyright © 2023 Lefin Suitcase - All Rights Reserved.</p>
             <img
-              src={process.env.PUBLIC_URL + "/assets/images/footer/logo.png"}
+              src="/assets/images/footer/logo.png"
               alt="Payment methods"
             />
           </div>

@@ -13,13 +13,11 @@ export default function MenuThree() {
       <Container>
         <div className="menu-wrapper">
           <MobileMenuOpener />
-          <Link href={process.env.PUBLIC_URL + "/"}>
-            <a className="menu-logo">
-              <img
-                src={process.env.PUBLIC_URL + "/assets/images/logo-white.png"}
-                alt="Ogami logo"
-              />
-            </a>
+          <Link href="/" className="menu-logo">
+            <img
+              src="/assets/images/logo-white.png"
+              alt="Lefin logo"
+            />
           </Link>
           <Navigator />
           <SearchForm hideSelect enterButton={<i className="icon_search" />} />

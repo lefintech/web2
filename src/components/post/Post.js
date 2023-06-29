@@ -13,7 +13,7 @@ function Post({ type, className, style, data }) {
           <div className="post-inline-image">
             <img
               title={data.title}
-              src={process.env.PUBLIC_URL + data.coverImage}
+              src={data.coverImage}
               alt="Post image"
             />
           </div>
@@ -29,10 +29,11 @@ function Post({ type, className, style, data }) {
               </p>
             </div>
             <Link
-              href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
-              as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
+              href={`/blog/post/[slug]`}
+              as={`/blog/post/${data.slug}`}
+              className="post-title"
             >
-              <a className="post-title">{data.title}</a>
+              {data.title}
             </Link>
           </div>
         </div>
@@ -42,17 +43,15 @@ function Post({ type, className, style, data }) {
         <div className={`post -style-one ${classNames(className)}`}>
           <div className="post-image">
             <Link
-              href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
-              as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
+              href={ `/blog/post/[slug]`}
+              as={ `/blog/post/${data.slug}`}
             >
-              <a>
-                <Image
-                  title={data.title}
-                  src={process.env.PUBLIC_URL + data.coverImage}
-                  alt="Post image"
-                  placeholder
-                />
-              </a>
+              <Image
+                title={data.title}
+                src={data.coverImage}
+                alt="Post image"
+                placeholder
+              />
             </Link>
           </div>
           <div className="post-content">
@@ -60,10 +59,11 @@ function Post({ type, className, style, data }) {
               {removeDash(data.category)}
             </Button>
             <Link
-              href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
-              as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
+              href={ `/blog/post/[slug]`}
+              as={`/blog/post/${data.slug}`}
+              className="post-title"
             >
-              <a className="post-title">{data.title}</a>
+              {data.title}
             </Link>
             <div className="post-info">
               <p className="credit date">{formatDate(data.publicDate)}</p>
@@ -71,15 +71,14 @@ function Post({ type, className, style, data }) {
             </div>
             <p className="post-description">{data.shortDescription}</p>
             <Link
-              href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
-              as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
+              href={ `/blog/post/[slug]`}
+              as={`/blog/post/${data.slug}`}
+              className="post-readmore"
             >
-              <a className="post-readmore">
-                Read More
-                <span>
-                  <i className="arrow_carrot-2right" />
-                </span>
-              </a>
+              Read More
+              <span>
+                <i className="arrow_carrot-2right" />
+              </span>
             </Link>
           </div>
         </div>
@@ -89,18 +88,16 @@ function Post({ type, className, style, data }) {
         <div className={`post -style-three ${classNames(className)}`}>
           <div className="post-image">
             <Link
-              href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
-              as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
+              href={ `/blog/post/[slug]`}
+              as={`/blog/post/${data.slug}`}
             >
-              <a>
-                <Image
-                  width="100%"
-                  title={data.title}
-                  src={process.env.PUBLIC_URL + data.coverImage}
-                  alt="Post image"
-                  placeholder
-                />
-              </a>
+              <Image
+                width="100%"
+                title={data.title}
+                src={data.coverImage}
+                alt="Post image"
+                placeholder
+              />
             </Link>
           </div>
           <div className="post-content">
@@ -123,26 +120,25 @@ function Post({ type, className, style, data }) {
         <div className={`post-tiny ${classNames(className)}`}>
           <div className="post-tiny-image">
             <Link
-              href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
-              as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
+              href={`/blog/post/[slug]`}
+              as={`/blog/post/${data.slug}`}
             >
-              <a>
-                <Image
-                  width="100%"
-                  title={data.title}
-                  src={process.env.PUBLIC_URL + data.coverImage}
-                  alt="Post image"
-                  placeholder
-                />
-              </a>
+              <Image
+                width="100%"
+                title={data.title}
+                src={data.coverImage}
+                alt="Post image"
+                placeholder
+              />
             </Link>
           </div>
           <div className="post-tiny-content">
             <Link
-              href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
-              as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
+              href={`/blog/post/[slug]`}
+              as={`/blog/post/${data.slug}`}
+              className="post-tiny-title"
             >
-              <a className="post-tiny-title">{data.title}</a>
+              {data.title}
             </Link>
             <p className="post-tiny-date">{formatDate(data.publicDate)}</p>
           </div>
@@ -153,17 +149,15 @@ function Post({ type, className, style, data }) {
         <div className={`post -style-two ${classNames(className)}`}>
           <div className="post-image">
             <Link
-              href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
-              as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
+              href={  `/blog/post/[slug]`}
+              as={  `/blog/post/${data.slug}`}
             >
-              <a>
-                <Image
-                  title={data.title}
-                  src={process.env.PUBLIC_URL + data.coverImage}
-                  alt="Post image"
-                  placeholder
-                />
-              </a>
+              <Image
+                title={data.title}
+                src={  data.coverImage}
+                alt="Post image"
+                placeholder
+              />
             </Link>
           </div>
           <div className="post-content">
@@ -171,10 +165,11 @@ function Post({ type, className, style, data }) {
               {removeDash(data.category)}
             </Button>
             <Link
-              href={process.env.PUBLIC_URL + `/blog/post/[slug]`}
-              as={process.env.PUBLIC_URL + `/blog/post/${data.slug}`}
+              href={  `/blog/post/[slug]`}
+              as={  `/blog/post/${data.slug}`}
+              className="post-title"
             >
-              <a className="post-title">{data.title}</a>
+              {data.title}
             </Link>
             <div className="post-info">
               <p className="credit date">{formatDate(data.publicDate)}</p>

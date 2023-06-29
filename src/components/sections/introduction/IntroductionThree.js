@@ -40,7 +40,7 @@ function IntroductionThree() {
             {data.map((item, index) => (
               <div key={index} className="introduction-three-steps-item">
                 <img
-                  src={process.env.PUBLIC_URL + item.image}
+                  src={item.image}
                   alt="Step image"
                 />
                 <h3>{item.title}</h3>

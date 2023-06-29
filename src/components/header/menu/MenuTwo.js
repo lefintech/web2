@@ -13,13 +13,11 @@ export default function MenuTwo({ containerFluid }) {
       <Container fluid={containerFluid}>
         <div className="menu-wrapper">
           <MobileMenuOpener />
-          <Link href={process.env.PUBLIC_URL + "/"}>
-            <a className="menu-logo">
+          <Link className="menu-logo" href="/">
               <img
-                src={process.env.PUBLIC_URL + "/assets/images/logo.png"}
-                alt="Ogami logo"
+                src="/assets/images/logo.png"
+                alt="Lefin logo"
               />
-            </a>
           </Link>
           <SearchForm enterButton={<i className="icon_search" />} />
           <Navigator />

@@ -39,7 +39,7 @@ function FooterFluid() {
           <div className="footer-bottom__wrapper">
             <p>Copyright © 2019 Ogami - All Rights Reserved.</p>
             <img
-              src={process.env.PUBLIC_URL + "/assets/images/footer/payment.png"}
+              src="/assets/images/footer/payment.png"
               alt="Payment methods"
             />
           </div>
