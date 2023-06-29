@@ -11,11 +11,11 @@ class MyDocument extends Document {
         <Head>
           <meta
             name="title"
-            content="Ogami - Multipurpose Organic Store & Bakery React Templates"
+            content="Lefin Suitcase"
           />
           <meta
             name="description"
-            content="Ogami - Multipurpose Organic Store & Bakery React Templates"
+            content="Legal and Financial Services"
           />
           <link rel="icon" href="/fav.png" />
           <link
